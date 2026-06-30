@@ -33,7 +33,7 @@ El sistema es capaz de evaluar reglas lógicas combinando premisas (antecedentes
 ---
 
 ## Estructura del proyecto
-
+```bash
 motor-inferencia-sbr/
 ├── doc/
 │   ├── ManualUso.md
@@ -63,3 +63,11 @@ motor-inferencia-sbr/
 ├── src/
 │   └── SBR-FC.cpp
 └── README.md
+```
+
+---
+
+## Requisitos
+
+- Compilador de C++ (GCC, Clang o MSVC)
+- Terminal de comandos para la ejecución de pruebas
