@@ -1,0 +1,7 @@
+6
+R1: Si O<10p Entonces Indeciso, FC=-0.4
+R2: Si O>10p Entonces Indeciso, FC=0.55
+R3: Si Indeciso Entonces Compra, FC=-0.3
+R4: Si Dinero y Rebajas Entonces Compra, FC=0.6
+R5: Si Jov o Acom Entonces Mas30min, FC=0.8
+R6: Si Mas30min Entonces Compra, FC=0.5

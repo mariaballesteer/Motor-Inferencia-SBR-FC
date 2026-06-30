@@ -1,0 +1,27 @@
+Base de conocimientos: BC-1.txt
+Base de hechos: BH-1.txt
+
+Conjunto de conflictos: R1, R2
+Regla R2 eliminada
+Antecedente de la regla R2: h4
+CASO 3 con la regla R2: 1 * max{0, 0.6} = 0.6
+CASO 2 añadiendo al hecho h1 el resultado de la regla R2: 0 + 0.6 * (1 - 0) = 0.6
+Regla R1 eliminada
+Antecedentes de la regla R1: h2, h3
+Conjunto de conflictos: R3, R4
+Regla R4 eliminada
+Antecedente de la regla R4: h7
+CASO 3 con la regla R4: -0.5 * max{0, 0.5} = -0.25
+CASO 2 añadiendo al hecho h3 el resultado de la regla R4: 0 + -0.25 * (1 + 0) = -0.25
+Regla R3 eliminada
+Antecedentes de la regla R3: h5, h6
+CASO 1 entre h5 y h6: min{0.9, 0.6} = 0.6
+CASO 3 con la regla R3: 0.7 * max{0, 0.6} = 0.42
+CASO 2 añadiendo al hecho h3 el resultado de la regla R3: -0.25 + 0.42 / (1 - min{0.25, 0.42}) = 0.226667
+CASO 1 entre h2 o h3: max{0.226667, 0.3} = 0.3
+CASO 3 con la regla R1: 0.5 * max{0, 0.3} = 0.15
+CASO 2 añadiendo al hecho h1 el resultado de la regla R1: 0.6 + 0.15 * (1 - 0.6) = 0.66
+
+
+El FC de h1 es: 0.66
+Tras analizar los hechos podemos intuir que h1 va a darse con una probabilidad alta

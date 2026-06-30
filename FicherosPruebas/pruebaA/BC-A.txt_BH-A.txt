@@ -1,0 +1,35 @@
+Base de conocimientos: BC-A.txt
+Base de hechos: BH-A.txt
+
+Conjunto de conflictos: R3, R4, R6
+Regla R6 eliminada
+Antecedente de la regla R6: Mas30min
+Conjunto de conflictos: R5
+Regla R5 eliminada
+Antecedentes de la regla R5: Jov, Acom
+CASO 1 entre Jov o Acom: max{1, -0.25} = 1
+CASO 3 con la regla R5: 0.8 * max{0, 1} = 0.8
+CASO 3 con la regla R6: 0.5 * max{0, 0.8} = 0.4
+CASO 2 añadiendo al hecho Compra el resultado de la regla R6: 0 + 0.4 * (1 - 0) = 0.4
+Regla R4 eliminada
+Antecedentes de la regla R4: Dinero, Rebajas
+CASO 1 entre Dinero y Rebajas: min{1, 0.75} = 0.75
+CASO 3 con la regla R4: 0.6 * max{0, 0.75} = 0.45
+CASO 2 añadiendo al hecho Compra el resultado de la regla R4: 0.4 + 0.45 * (1 - 0.4) = 0.67
+Regla R3 eliminada
+Antecedente de la regla R3: Indeciso
+Conjunto de conflictos: R1, R2
+Regla R2 eliminada
+Antecedente de la regla R2: O>10p
+CASO 3 con la regla R2: 0.55 * max{0, 1} = 0.55
+CASO 2 añadiendo al hecho Indeciso el resultado de la regla R2: 0 + 0.55 * (1 - 0) = 0.55
+Regla R1 eliminada
+Antecedente de la regla R1: O<10p
+CASO 3 con la regla R1: -0.4 * max{0, -1} = -0
+CASO 2 añadiendo al hecho Indeciso el resultado de la regla R1: 0.55 + -0 * (1 - 0.55) = 0.55
+CASO 3 con la regla R3: -0.3 * max{0, 0.55} = -0.165
+CASO 2 añadiendo al hecho Compra el resultado de la regla R3: 0.67 + -0.165 / (1 - min{0.67, 0.165}) = 0.60479
+
+
+El FC de Compra es: 0.60479
+Tras analizar los hechos podemos intuir que Compra va a darse con una probabilidad alta

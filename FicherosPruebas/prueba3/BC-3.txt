@@ -1,0 +1,8 @@
+7
+R1: Si Cond2-3A Entonces Exp, FC=0.5
+R2: Si Cond>3A Entonces Exp, FC=0.9
+R3: Si C2-3H Entonces Cans, FC=0.5
+R4: Si C>3H Entonces Cans, FC=1
+R5: Si Exp y NoVSolo Entonces CausanteA, FC=-0.5
+R6: Si Cans Entonces CausanteA, FC=0.5
+R7: Si Jov o Beb Entonces CausanteA, FC=0.7

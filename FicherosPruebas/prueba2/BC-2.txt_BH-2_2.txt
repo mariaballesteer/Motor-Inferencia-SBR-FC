@@ -1,0 +1,21 @@
+Base de conocimientos: BC-2.txt
+Base de hechos: BH-2_2.txt
+
+Conjunto de conflictos: R2, R3, R5
+Regla R5 eliminada
+Antecedentes de la regla R5: les2pivRM, visitanteRM
+CASO 1 entre les2pivRM y visitanteRM: min{1, 1} = 1
+CASO 3 con la regla R5: -0.1 * max{0, 1} = -0.1
+CASO 2 añadiendo al hecho ganaRM el resultado de la regla R5: 0 + -0.1 * (1 + 0) = -0.1
+Regla R3 eliminada
+Antecedente de la regla R3: publicoMayEST
+CASO 3 con la regla R3: -0.4 * max{0, 0.65} = -0.26
+CASO 2 añadiendo al hecho ganaRM el resultado de la regla R3: -0.1 + -0.26 * (1 + -0.1) = -0.334
+Regla R2 eliminada
+Antecedente de la regla R2: arbMod
+CASO 3 con la regla R2: 0.75 * max{0, 1} = 0.75
+CASO 2 añadiendo al hecho ganaRM el resultado de la regla R2: -0.334 + 0.75 / (1 - min{0.334, 0.75}) = 0.624625
+
+
+El FC de ganaRM es: 0.624625
+Tras analizar los hechos podemos intuir que ganaRM va a darse con una probabilidad alta

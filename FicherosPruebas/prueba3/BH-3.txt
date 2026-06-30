@@ -1,0 +1,10 @@
+7
+Cond2-3A, FC=-1
+Cond>3A, FC=1
+C2-3H, FC=1
+C>3H, FC=-1
+Jov, FC=0.4
+Beb, FC=0
+NoVSolo, FC=-1
+Objetivo
+CausanteA

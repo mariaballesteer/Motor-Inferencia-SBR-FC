@@ -1,0 +1,9 @@
+6
+O<10p, FC=-1
+O>10p, FC=1
+Dinero, FC=0.75
+Rebajas, FC=1
+Jov, FC=-0.25
+Acom, FC=1
+Objetivo
+Compra

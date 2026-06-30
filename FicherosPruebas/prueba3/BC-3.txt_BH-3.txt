@@ -1,0 +1,40 @@
+Base de conocimientos: BC-3.txt
+Base de hechos: BH-3.txt
+
+Conjunto de conflictos: R5, R6, R7
+Regla R7 eliminada
+Antecedentes de la regla R7: Jov, Beb
+CASO 1 entre Jov o Beb: max{0, 0.4} = 0.4
+CASO 3 con la regla R7: 0.7 * max{0, 0.4} = 0.28
+CASO 2 añadiendo al hecho CausanteA el resultado de la regla R7: 0 + 0.28 * (1 - 0) = 0.28
+Regla R6 eliminada
+Antecedente de la regla R6: Cans
+Conjunto de conflictos: R3, R4
+Regla R4 eliminada
+Antecedente de la regla R4: C>3H
+CASO 3 con la regla R4: 1 * max{0, -1} = 0
+CASO 2 añadiendo al hecho Cans el resultado de la regla R4: 0 + 0 * (1 - 0) = 0
+Regla R3 eliminada
+Antecedente de la regla R3: C2-3H
+CASO 3 con la regla R3: 0.5 * max{0, 1} = 0.5
+CASO 2 añadiendo al hecho Cans el resultado de la regla R3: 0 + 0.5 * (1 - 0) = 0.5
+CASO 3 con la regla R6: 0.5 * max{0, 0.5} = 0.25
+CASO 2 añadiendo al hecho CausanteA el resultado de la regla R6: 0.28 + 0.25 * (1 - 0.28) = 0.46
+Regla R5 eliminada
+Antecedentes de la regla R5: Exp, NoVSolo
+Conjunto de conflictos: R1, R2
+Regla R2 eliminada
+Antecedente de la regla R2: Cond>3A
+CASO 3 con la regla R2: 0.9 * max{0, 1} = 0.9
+CASO 2 añadiendo al hecho Exp el resultado de la regla R2: 0 + 0.9 * (1 - 0) = 0.9
+Regla R1 eliminada
+Antecedente de la regla R1: Cond2-3A
+CASO 3 con la regla R1: 0.5 * max{0, -1} = 0
+CASO 2 añadiendo al hecho Exp el resultado de la regla R1: 0.9 + 0 * (1 - 0.9) = 0.9
+CASO 1 entre Exp y NoVSolo: min{-1, 0.9} = -1
+CASO 3 con la regla R5: -0.5 * max{0, -1} = -0
+CASO 2 añadiendo al hecho CausanteA el resultado de la regla R5: 0.46 + -0 * (1 - 0.46) = 0.46
+
+
+El FC de CausanteA es: 0.46
+Hay indicios de que va a darse CausanteA pero no se puede asegurar

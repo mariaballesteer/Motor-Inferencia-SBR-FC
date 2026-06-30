@@ -1,0 +1,20 @@
+Base de conocimientos: BC-2.txt
+Base de hechos: BH-2_1.txt
+
+Conjunto de conflictos: R1, R4, R6
+Regla R6 eliminada
+Antecedente de la regla R6: les2pivEST
+CASO 3 con la regla R6: -0.6 * max{0, 1} = -0.6
+CASO 2 añadiendo al hecho ganaEST el resultado de la regla R6: 0 + -0.6 * (1 + 0) = -0.6
+Regla R4 eliminada
+Antecedente de la regla R4: publicoEqui
+CASO 3 con la regla R4: -0.55 * max{0, 0.35} = -0.1925
+CASO 2 añadiendo al hecho ganaEST el resultado de la regla R4: -0.6 + -0.1925 * (1 + -0.6) = -0.677
+Regla R1 eliminada
+Antecedente de la regla R1: arbMod
+CASO 3 con la regla R1: 0.4 * max{0, 1} = 0.4
+CASO 2 añadiendo al hecho ganaEST el resultado de la regla R1: -0.677 + 0.4 / (1 - min{0.677, 0.4}) = -0.461667
+
+
+El FC de ganaEST es: -0.461667
+Hay indicios de que no va a darse ganaEST pero no se puede asegurar
